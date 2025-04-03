@@ -69,6 +69,39 @@ Actualmente, la única manera de acceder a la información del contenido del jue
 - **GitHub:** Para la gestión de versiones del código en el desarrollo, usando **conventional commits**.
 
 ---
+# Estructura de Archivos
+
+Se usara la siguiente estrcutura de archivos para mantener un orden que promueva la modularidad, mantenibilidad y reutilizacion de codigo.
+
+**Estructura**
+
+│── 📂 docs/               # Documentación del proyecto
+│   ├── README.md          # Instrucciones generales
+│── 📂 public/             # Archivos accesibles públicamente
+│   ├── favicon.png        # Ícono del sitio 
+│   ├── index.html         # Página principal
+│── 📂 src/                # Código fuente
+│   ├── 📂 assets/         # Recursos estáticos
+│   │   ├── 📂 font/       # fuentes
+│   │   ├── 📂 icon/       # íconos
+│   │   ├── 📂 img/        # imágenes
+│   ├── 📂 components/     # Componentes reutilizables en HTML
+│   │   ├── footer.html    # Pie de página
+│   │   ├── header.html    # Encabezado de la página
+│   ├── 📂 css/            # Estilos CSS
+│   │   ├── main.css       # Estilos principales
+│   │   ├── variables.css  # Variables de colores y temas
+│   │   ├── components.css # Estilos específicos de componentes 
+│   │   ├── responsive.css # Estilos responsivos
+│   ├── 📂 data/           # Datos estáticos o de configuración  
+│   │   ├── data.json    # Configuración del proyecto
+│   ├── 📂 js/             # Scripts de JavaScript  
+│   │   ├── api.js         # Llamadas a la API (fetch, manejo de datos)  
+│   │   ├── events.js      # Gestión de eventos (botones, interacciones)  
+│   │   ├── main.js        # Archivo principal, punto de entrada  
+│   │   ├── storage.js     # Funciones de almacenamiento en Local Storage  
+│   │   ├── ui.js          # Manipulación del DOM (carga de contenido)  
+
 
 # Instrucciones de uso de [MockAPI](https://mockapi.io/)
 
@@ -116,230 +149,3 @@ GET https://67ed98144387d9117bbe1a16.mockapi.io/api/v1/:endpoint
   }
 ]
 
-```
-
-# Historias de usuario
-
-**Inicio parte 1/2**
-
-```less
-**Como:** usuario,
-**Quiero:** ver el clima actual de mi ubicación con una interfaz atractiva, 
-**Para:** conocer rápidamente la temperatura, sensación térmica y condiciones del clima.
-
-
-## Obtener datos de la API
-- [ ] La aplicación debe consumir los datos de WeatherAPI.
-- [ ] Se debe realizar una petición a la API con la ciudad del usuario o su geolocalización.
-- [ ] Los datos deben actualizarse en tiempo real cuando el usuario seleccione una nueva ubicación.
-
-## Mostrar información del clima actual
-- [ ] Se debe mostrar la temperatura actual en grados Celsius o Fahrenheit (según configuración).
-- [ ] Incluir la sensación térmica basada en la velocidad del viento y la humedad.
-- [ ] Mostrar el estado del clima con un icono representativo y una descripción (ejemplo: "Cloudy").
-- [ ] Visualizar la fecha y hora de actualización de los datos meteorológicos.
-
-## Visualizar el pronóstico por días y horas
-- [ ] Se visualizan tres pestañas de selección para mostrar el pronóstico:
-
-- Hoy (muestra el clima actual y su evolución por horas).
-- Mañana (muestra un resumen del clima del día siguiente).
-- 10 días (pronóstico extendido).
-- [ ] La pestaña activa se resalta visualmente con un fondo más opaco y texto en negrita.
-- [ ] Al hacer clic en otra pestaña, la información se actualiza dinámicamente sin recargar la página.
-- [ ] La sección Hourly Forecast muestra la temperatura y el estado del clima por horas.
-
-
-## Mostrar datos adicionales del clima
-- [ ] Se presentan cuatro tarjetas informativas, cada una con icono y valores dinámicos:
-
-- Velocidad del viento (Ejemplo: "12 km/h") con un icono de viento 🌬️.
-- Probabilidad de lluvia (Ejemplo: "24%") con un icono de lluvia 🌧️.
-- Presión atmosférica (Ejemplo: "720 hPa") con un icono de presión 🌡️.
-- Índice UV (Ejemplo: "2.3") con un icono de sol ☀️.
-
-- [ ] Cada tarjeta tiene colores suaves y un borde redondeado para mejorar la experiencia visual.
-- [ ] Cuando un valor cambia significativamente, el color del texto cambia rojo🔻/verde🔺 para indicar variaciones importantes.
-
-
-## Interactividad y diseño atractivo
-
-### Encabezado
-- [ ] Se visualiza la hora actual en la parte superior izquierda.
-- [ ] Se muestra el nombre de la ciudad y el país debajo de la hora.
-- [ ] Se incluye un icono de búsqueda 🔍 en la parte superior derecha para permitir al usuario cambiar de ubicación.
-
-### Sección Principal del Clima
-- [ ] Se muestra una ilustración animada o un fondo dinámico que cambia según el clima y la hora del día.
-- [ ] Se visualiza la temperatura actual en el centro con un tamaño de fuente grande.
-- [ ] Se muestra la sensación térmica debajo de la temperatura con una fuente más pequeña.
-- [ ] Se incluye el estado del clima (Ejemplo: "Cloudy") junto con un icono representativo.
-
-### Pronóstico por Horas (Hourly Forecast)
-- [ ] Se muestra una sección con el título "Hourly Forecast".
-- [ ] Se presentan las siguientes horas en un carrusel horizontal deslizable.
-- [ ] Cada bloque de hora muestra:
-
-- La hora en la parte superior.
-- Un icono del clima en el centro.
-- La temperatura esperada en la parte inferior.
-
-- [ ] El fondo de cada bloque cambia ligeramente de color si la temperatura es más alta o baja en comparación con el resto del día.
-- [ ] Se puede deslizar hacia la derecha para ver más horas sin necesidad de recargar la página.
-
-### Fondo Dinámico y Animaciones
-- [ ] El fondo de la aplicación cambia según la hora del día y el clima:
-
-- Día soleado: Fondo con tonos azulados y sol brillante. ☀️
-- Noche despejada: Fondo oscuro con estrellas brillantes. 🌙
-- Lluvia: Fondo con gotas animadas y cielo gris. 🌧️
-- Nublado: Fondo con nubes en movimiento. ☁️
-
-- [ ] Se usan transiciones suaves al actualizar la información (fade-in/fade-out).
-- [ ] Se implementa una animación en la temperatura al cambiar los valores para que no sea abrupto.
-
-
-## Navegación y Funcionalidad Extra
-### Barra de búsqueda emergente
-- [ ] Al hacer clic en el icono de búsqueda 🔍, aparece una barra de búsqueda con autocompletado.
-- [ ] Los resultados de ciudades se muestran en una lista desplegable.
-
-### Almacenamiento de preferencias
-- [ ] La aplicación recuerda la última ciudad consultada con localStorage.
-- [ ] Se puede seleccionar una ciudad favorita para que siempre se cargue al abrir la app.
-
-### Modo Oscuro / Claro
-- [ ] El usuario puede alternar entre:
-
-- Modo claro (fondos claros).
-- Modo oscuro (fondos oscuros).
-
-- [ ] La configuración se guarda automáticamente en localStorage.
-
-### Carga optimizada de datos
-- [ ] Se muestra un indicador de carga mientras se obtienen los datos.
-- [ ] Si hay un error con la API, aparece un mensaje de error en la interfaz en lugar de dejar la pantalla en blanco.
-```
-
-**Inicio parte 2/2**
-
-```less
-
-## Obtener datos de la API
-- [ ] La aplicación debe consumir los datos de WeatherAPI.
-- [ ] Se debe realizar una petición a la API con la ciudad del usuario o su geolocalización.
-- [ ] Los datos deben actualizarse en tiempo real cuando el usuario seleccione una nueva ubicación.
-
-## Mostrar pronóstico diario con gráfico de temperatura
-- [ ] Se muestra una gráfica de líneas que representa la evolución de la temperatura durante la semana.
-- [ ] Se visualiza la temperatura máxima y mínima para cada día.
-- [ ] Se resalta con un punto y una etiqueta la temperatura actual dentro del gráfico.
-- [ ] Al deslizar el dedo sobre el gráfico, se muestra información detallada del día seleccionado.
-
-## Mostrar probabilidad de lluvia por hora
-- [ ] Se presenta una sección con barras horizontales que indican la probabilidad de lluvia para las próximas horas.
-- [ ] Cada barra representa un rango horario (Ejemplo: 7 PM, 8 PM, 9 PM, 10 PM).
-- [ ] El color de la barra cambia de intensidad según el porcentaje de lluvia.
-- [ ] Se muestra el porcentaje exacto de probabilidad de lluvia en el lado derecho de cada barra.
-
-## Mostrar horarios de amanecer y atardecer
-- [ ] Se presentan dos tarjetas informativas en la parte inferior de la vista:
-
-- Amanecer 🌙 con la hora exacta de salida del sol.
-- Atardecer ☀️ con la hora exacta en que el sol se oculta.
-
-- [ ] Se indica el tiempo transcurrido desde el amanecer y cuánto falta para el atardecer.
-
-## Navegación y Funcionalidad Extra
-### Almacenamiento de preferencias
-- [ ] La aplicación recuerda la última ciudad consultada con localStorage.
-- [ ] Se puede seleccionar una ciudad favorita para que siempre se cargue al abrir la app.
-
-### Modo Oscuro / Claro
-- [ ] El usuario puede alternar entre:
-
-- Modo claro (fondos claros).
-- Modo oscuro (fondos oscuros).
-
-- [ ] La configuración se guarda automáticamente en localStorage.
-
-### Carga optimizada de datos
-- [ ] Se muestra un indicador de carga mientras se obtienen los datos.
-- [ ] Si hay un error con la API, aparece un mensaje de error en la interfaz en lugar de dejar la pantalla en blanco.
-
-
-```
-
-**proximos 10 dias**
-
-```less
-**Como:** usuario
-**Quiero:** visualizar el pronóstico del clima para los próximos 10 días
-**Para:** planificar mis actividades con anticipación según las condiciones meteorológicas
-
-## Obtener datos de la API
-- [ ] La aplicación debe consumir los datos de WeatherAPI.
-- [ ] Se debe realizar una petición a la API para obtener el pronóstico extendido de 10 días.
-- [ ] Los datos deben actualizarse en tiempo real cuando el usuario seleccione una nueva ubicación.
-
-
-## Visualizar el pronóstico extendido de 10 días
-- Se visualizan tres pestañas de selección para alternar entre:
-
-- Hoy (clima actual y evolución por horas).
-- Mañana (resumen del clima del día siguiente).
-- 10 días (pronóstico extendido).
-
-- [ ] La pestaña "10 días" debe estar resaltada visualmente cuando se seleccione.
-- [ ] Al hacer clic en otra pestaña, la información debe actualizarse dinámicamente sin recargar la página.
-
-## Mostrar la lista del pronóstico de los próximos 10 días
-- [ ] Se presenta una lista vertical desplazable con el pronóstico de los 10 días siguientes.
-
-- Cada día en la lista incluye:
-
-- [ ] Fecha completa (Ejemplo: "Thursday, Jan 19").
-- [ ] Descripción del clima (Ejemplo: "Cloudy and Sunny").
-- [ ] Temperatura máxima y mínima (Ejemplo: "3° / -2°").
-- [ ] Icono representativo del clima (Ejemplo: sol y nubes ☀️☁️).
-- [ ] Botón de más información (ícono desplegable ⏷) para ver detalles adicionales del clima de ese día.
-
-- [ ] Se debe permitir deslizar hacia abajo para ver todos los días disponibles.
-- [ ] El fondo de cada tarjeta cambia ligeramente de tono según la temperatura promedio del día.
-
-
-## Diseño de la Lista de Pronóstico
-- [ ] Cada día se presenta en una tarjeta con bordes redondeados.
-- [ ] El color de fondo de cada tarjeta cambia en función de la temperatura predominante.
-- [ ] Se usa una fuente clara y legible para la fecha y la temperatura.
-- [ ] Se permite tocar el botón desplegable ⏷ para mostrar más detalles del día seleccionado.
-
-## Fondo Dinámico y Animaciones
-- [ ] El fondo de la aplicación cambia según la hora del día y el clima:
-
-- Día soleado: Fondo con tonos azulados y sol brillante. ☀️
-- Noche despejada: Fondo oscuro con estrellas brillantes. 🌙
-- Lluvia: Fondo con gotas animadas y cielo gris. 🌧️
-- Nublado: Fondo con nubes en movimiento. ☁️
-
-- [ ] Se usan transiciones suaves al actualizar la información (fade-in/fade-out).
-- [ ] Se implementa una animación en la temperatura al cambiar los valores para que no sea abrupto.
-
-
-## Navegación y Funcionalidad Extra
-### Almacenamiento de preferencias
-- [ ] La aplicación recuerda la última ciudad consultada con localStorage.
-- [ ] Se puede seleccionar una ciudad favorita para que siempre se cargue al abrir la app.
-
-### Modo Oscuro / Claro
-- [ ] El usuario puede alternar entre:
-
-- Modo claro (fondos claros).
-- Modo oscuro (fondos oscuros).
-
-- [ ] La configuración se guarda automáticamente en localStorage.
-
-### Carga optimizada de datos
-- [ ] Se muestra un indicador de carga mientras se obtienen los datos.
-- [ ] Si hay un error con la API, aparece un mensaje de error en la interfaz en lugar de dejar la pantalla en blanco.
-```
