@@ -1,0 +1,271 @@
+[
+    {
+        "tipo": "heroes",
+        "contenido": [
+            {
+                "nombre": "Aragorn",
+                "raza": "Humano",
+                "estadisticas": {
+                    "vigor": 3,
+                    "sabiduria": 4,
+                    "agilidad": 2,
+                    "brio": 2,
+                    "astucia": 3
+                },
+                "soporte": {
+                    "miedo": 5,
+                    "daño": 5,
+                    "inspiracion": 4
+                },
+                "habilidad": "Cuando los Héroes usen Otear durante la fase de reagrupamiento, tú y los Héroes cercanos reveláis cada uno 1 carta adicional.",
+                "historia": "Los dûnedain del Norte estuvieron a punto de ser extinguidos. Aunque pocos en número, no cejan en su empeño de proteger las tierras que antaño fueron su reino. Los encabeza su jefe, Aragorn, descendiente de Isildur y destinado para la grandeza. Sin embargo, esas profecías y su linaje de poco le sirven en estos tiempos. La sangre azul no puede detener el filo de un enemigo, y las canciones sobre la gloria por conquistar no sirven para alimentar a tu pueblo. Puede que el futuro les depare años de paz y prosperidad, pero el presente no. Ahora es tiempo de adversidad, penurias y supervivencia. Nuevos peligros amenazan al Norte en cada vez mayor número, y los años más oscuros aún están por llegar.",
+                "inicio": {
+                    "cometido": "Capitan",
+                    "arma1": "Espada",
+                    "arma2": "Estandarte",
+                    "armadura": "Atuendo de Viaje"
+                }
+            },
+            {
+                "nombre": "Arwen",
+                "raza": "Elfo",
+                "estadisticas": {
+                    "vigor": 2,
+                    "sabiduria": 4,
+                    "agilidad": 3,
+                    "brio": 3,
+                    "astucia": 2
+                },
+                "soporte": {
+                    "miedo": 6,
+                    "daño": 4,
+                    "inspiracion": 5
+                },
+                "habilidad": "Una vez durante tu turno, tú o un Héroe cercano podéis poner 1 daño o miedo boca abajo o descartar 1 daño o miedo boca abajo.",
+                "historia": "Arwen Undómiel, de la rostro tan hermoso como el de Lúthien, la de destino tan grandioso como el de Beren, hace que perviva el legado de sus antepasados. Como su padre Elrond antes que ella, posee el talento para ver como se teje la urdimbre del porvenir y sostiene pasado y futuro como agua clara en las palmas de las manos. Sus palabras transmiten una gran sabiduría para quienes escuchan sus consejos.Más el futuro nunca es inmutable, y tratar de guiar su camino hacia la luz llevará a Arwen lejos de su pueblo y fuera de su bosque. Los peligros a los que se enfrenta son muchos, pero dondequiera que vaya nunca dejará de ser la Estrella de la tarde, que llena a todos la luz y el saber.",
+                "inicio": {
+                    "cometido": "Herbolista",
+                    "arma1": "Puñal",
+                    "arma2": "Honda",
+                    "armadura": "Capa"
+                }
+            },
+            {
+                "nombre": "Balin",
+                "raza": "Enano",
+                "estadisticas": {
+                    "vigor": 3,
+                    "sabiduria": 3,
+                    "agilidad": 2,
+                    "brio": 4,
+                    "astucia": 2
+                },
+                "soporte": {
+                    "miedo": 4,
+                    "daño": 6,
+                    "inspiracion": 4
+                },
+                "habilidad": "Una vez por ronda, cuando sufras daño, después de resolver todos los daños de una misma fuente, puedes preparar 1 Habilidad de tu pila de descarte",
+                "historia": "En sus muchos viajes a lo largo de su longeva vida, Balin nunca ha encontrado un desafío que se le haya resistido durante mucho tiempo. Cuanto más oscura sea la senda, más tesoros habrá ocultos ante la vista, a la espera de que los valientes y los astutos los descubran. Después de que Balin reclamase Erebor en compañía de Thorin, los enanos prosperaron, pero Balin tenía hambre de nuevas aventuras y nuevos descubrimientos. Ahora, Balin está listo para emprender otro viaje, quizá incluso a las oscuras profundidades de Khazad-dûm, abandonadas hace ya tanto tiempo. Los tesoros que allí se perdieron lo tientan a llegar más hondo de lo que nunca nadie lo haya hecho, y anhela ver de nuevo a un rey sentado en el trono bajo las Montañas Nubladas.",
+                "inicio": {
+                    "cometido": "Aventurero",
+                    "arma1": "Destral",
+                    "arma2": "Escudo",
+                    "armadura": "Atuendo De Viaje"
+                }
+            },
+            {
+                "nombre": "Beravor",
+                "raza": "Humano",
+                "estadisticas": {
+                    "vigor": 3,
+                    "sabiduria": 3,
+                    "agilidad": 3,
+                    "brio": 3,
+                    "astucia": 2
+                },
+                "soporte": {
+                    "miedo": 5,
+                    "daño": 5,
+                    "inspiracion": 4
+                },
+                "habilidad": "Una vez por ronda, después de Correr, Ocultarse o Golpear, puedes Otear 1.",
+                "historia": "Como montaraz del Norte, Beravor conoce los senderos ocultos de la Tierra Media que atraviesan colinas baldías, bosques enmarañados y ruinas intranquilas, y los frecuenta en busca de la seguridad y celeridad que ofrecen a la hora de recorrer lo que, de otro modo, serían territorios plagados de peligros.Lo único capaz de desviar de su camino a esta montaraz es la llamada de socorro de alguien en apuros, sea un aliado o un desconocido. Entonces, no importa la causa o la amenaza, se aprestará de inmediato para la lucha.Ahora que la oscuridad que se extiende entre los territorios de los Pueblos Libres crece cada día, la agilidad, el saber y la valentía de Beravor son preciadas cualidades que pronto deberá poner al servicio del prójimo.",
+                "inicio": {
+                    "cometido": "Batidor",
+                    "arma1": "Baston",
+                    "arma2": "N/A",
+                    "armadura": "Atuendo De Viaje"
+                }
+            },
+            {
+                "nombre": "Bilbo",
+                "raza": "Hobbit",
+                "estadisticas": {
+                    "vigor": 2,
+                    "sabiduria": 2,
+                    "agilidad": 3,
+                    "brio": 3,
+                    "astucia": 4
+                },
+                "soporte": {
+                    "miedo": 7,
+                    "daño": 3,
+                    "inspiracion": 6
+                },
+                "habilidad": "Antes de interactuar, mira la primera carta de tu mazo. Si es una carta con Destino, obtien 1 Inspiración. Sólo puedes equiparte con (Arma de una Mano)",
+                "historia": "Hace no muchos años, Bilbo viajó hacia el este desde la Comarca, y la experiencia lo cambió para siempre. No es que haya abandonado del todo sus viejas costumbres, pues conserva su afición por una buena comida caliente, las largas siestas ininterrumpidas y los agujeros en el suelo, siempre que no contengan trasgos o dragones... ni tampoco criaturas asesinas con gusto por las adivinanzas, ya que nos ponemos. Sin embargo, algo se ha transformado en lo más hondo de su ser. Ahora es un trotamundos, un ladrón, un guerrero y, aunque no se atreva a confesárselo a sus vecinos, un aventurero. Se ha lanzado a la aventura y ha huido para salvar el pellejo. Ha envainado una hoja ensangrentada, ha volado con las águilas y ha escalado una montaña formada por las riquezas de cien reinos. Ahora que su lado Tuk ha despertado, es difícil volver a acallarlo. Puede que haya llegado la hora de otra aventura.",
+                "inicio": {
+                    "cometido": "Ladron",
+                    "arma1": "Daga",
+                    "arma2": "N/A",
+                    "armadura": "Capa"
+                }
+            },
+            {
+                "nombre": "Dis",
+                "raza": "Enano",
+                "estadisticas": {
+                    "vigor": 4,
+                    "sabiduria": 2,
+                    "agilidad": 2,
+                    "brio": 3,
+                    "astucia": 3
+                },
+                "soporte": {
+                    "miedo": 5,
+                    "daño": 5,
+                    "inspiracion": 3
+                },
+                "habilidad": "Después de realizar una prueba, puedes gastar 1 Destino (♣) para poner 1 carta de la prueba encima de tu mazo.",
+                "historia": "Dís ha visto cómo las tinieblas invaden el mundo. La mirada de los viajeros se torna temerosa y desesperanzada con la proliferación de amenazas en el camino. Su propio hermano, Thorin Escudo de Roble, y sus dos hijos, Fíli y Kíli, perecieron mientras recuperaban Erebor. Última superviviente de su familia y una de las más grandes herreras de las montañas, Dís no puede seguir permitiendo que sean otros quienes carguen con el peso de un trabajo tan necesario. Es hora de hacer valer todo su talento artesano y su astucia para plantar cara a los Enemigos de la Tierra Media. ¡Pobres aquellos que se enfrenten a ella en batalla! Pues un enano no descansa hasta que ya no queden rivales por abatir.",
+                "inicio": {
+                    "cometido": "Herrero",
+                    "arma1": "Martillo",
+                    "arma2": "N/A",
+                    "armadura": "Cota de malla de anillos"
+                }
+            },
+            {
+                "nombre": "Elanor",
+                "raza": "Humano",
+                "estadisticas": {
+                    "vigor": 3,
+                    "sabiduria": 2,
+                    "agilidad": 3,
+                    "brio": 3,
+                    "astucia": 3
+                },
+                "soporte": {
+                    "miedo": 5,
+                    "daño": 5,
+                    "inspiracion": 4
+                },
+                "habilidad": "Una vez por fase, un Héroe que esté en tu casilla puede gastar 1 Inspiración para convertir 2 Destinos (♣) en 2 Exitos (♢).",
+                "historia": "Como noble de Gondor, Eleanor conoce muy bien la interminable labor que supone defender las colonias humanas frente al adversario. Tan pronto como alcanzó la mayoría de edad, Eleanor se lanzó a los caminos, sirviendo como mensajera entre las aldeas remotas de las montañas. Parece que cada año aumenta el número de orcos que amenazan la frontera y el de los valerosos soldados que caen ante las condenadas armas del enemigo, para no volver a levantarse nunca más. Pero Gondor no es la única tierra amenazada por el mal creciente, y Eleanor está preparada para salir al mundo. Espera regresar algún día a Gondor, su amada tierra entre las montañas y el mar, con mejores métodos para proteger a su pueblo de quienes lo querrían convertir en ruinas.",
+                "inicio": {
+                    "cometido": "Viajero",
+                    "arma1": "Espada",
+                    "arma2": "Cuerno",
+                    "armadura": "Atuendo de Viaje"
+                }
+            },
+            {
+                "nombre": "Elena",
+                "raza": "Elfo",
+                "estadisticas": {
+                    "vigor": 2,
+                    "sabiduria": 2,
+                    "agilidad": 2,
+                    "brio": 4,
+                    "astucia": 3
+                },
+                "soporte": {
+                    "miedo": 6,
+                    "daño": 4,
+                    "inspiracion": 5
+                },
+                "habilidad": "Una vez por prueba, después de gastar 1 Inspiración, un Héroe cercano obtiene 1 Inspiración.",
+                "historia": "Nacida en la gran ciudad portuaria de Mithlond, Elena ha sido testigo durante años de cómo muchos de los suyos se embarcaban rumbo a las Tierras Imperecederas para no regresar. Incluso la población de su propia ciudad empezó a menguar a medida que los elfos de toda edad y vocación, salvo los Guardianes de las Naves, desaparecían en el Oeste. Ya nada queda para ella en estas tierras abandonadas sino la curiosa belleza que aprecia en cómo la ciudad se desvanece. Igual que la gloria flamígera del sol al ponerse o el esplendor culminante del coro final de una pieza musical, así es la marcha de los elfos. Tras haber recopilado los hechos y las canciones de aquellos que han huido al Oeste, Elena parte ahora en busca de las historias de quienes se han quedado y quizá, si la suerte le sonríe, de la suya propia.",
+                "inicio": {
+                    "cometido": "Musico",
+                    "arma1": "Daga",
+                    "arma2": "Arpa",
+                    "armadura": "Capa"
+                }
+            },
+            {
+                "nombre": "Gandalf",
+                "raza": "Isari",
+                "estadisticas": {
+                    "vigor": 2,
+                    "sabiduria": 4,
+                    "agilidad": 2,
+                    "brio": 4,
+                    "astucia": 2
+                },
+                "soporte": {
+                    "miedo": 6,
+                    "daño": 6,
+                    "inspiracion": 5
+                },
+                "habilidad": "Una vez por ronda, después de descartar una Habilidad preparada con Destino (♣), puedes obtener 1 Inspiración y Otear 1.",
+                "historia": "A Gandalf se le conoce por muchos nombres. Algunos lo llaman simplemente el Peregrino Gris, mientras que otros lo conocen como Cuervo de la Tempestad o Capagris. Aunque su aspecto es el de un anciano encorvado, su mirada puede inquietar a quienes no están acostumbrados al sabio mago, pues les transmite la sensación de que sabe más de lo que debería y de que ve cosas que preferirían mantener ocultas. Gandalf tiene poderes a su disposición que están más allá de lo que los mortales pueden manejar, puesto que en realidad es uno de los Istari. Como miembro del Concilio Blanco, Gandalf se preocupa principalmente por mantener a raya las fuerzas de la corrupción y las tinieblas. Tiene muy presente lo que podría suceder si el Concilio vacilase en su cometido.",
+                "inicio": {
+                    "cometido": "Urdidor",
+                    "arma1": "Vara",
+                    "arma2": "Espada",
+                    "armadura": "Capa"
+                }
+            },
+            {
+                "nombre": "Gimli",
+                "raza": "Enano",
+                "estadisticas": {
+                    "vigor": 4,
+                    "sabiduria": 2,
+                    "agilidad": 2,
+                    "brio": 4,
+                    "astucia": 2
+                },
+                "soporte": {
+                    "miedo": 4,
+                    "daño": 6,
+                    "inspiracion": 3
+                },
+                "habilidad": "Después de atacar, puedes poner 1 carta revelada en la prueba encima de tu mazo.",
+                "historia": "Hace tiempo que en Gimli, hijo de Glóin y descendiente de Durin el Inmortal, arde el deseo de salir en busca de aventuras más allá del exilio de su pueblo en Ered Luin. Cuando su padre se incorporó a la compañía que partía al este para recuperar el Reino bajo la Montaña perdido, Gimli no pudo unirse al grupo. Sin embargo, ahora que ha alcanzado una edad respetable, Gimli está preparado para desatar sobre sus enemigos su ferocidad y destreza. Como ocurre con cualquier enano, bulle en él la pasión por cobrarse su venganza contra los viles orcos que habitan en la oscuridad del subsuelo. En estos tiempos, empero, no es necesario adentrarse en las entrañas de la tierra para encontrarlos, así que Gimli aguarda ansioso el momento de la llamada para liberar a los oprimidos de la creciente oscuridad, o mejor aún, librar una guerra contra ella.",
+                "inicio": {
+                    "cometido": "Guardian",
+                    "arma1": "Hacha de batalla",
+                    "arma2": "N/A",
+                    "armadura": "Cota de malla de anillos"
+                }
+            },
+            {
+                "nombre": "Legolas",
+                "raza": "Elfo",
+                "estadisticas": {
+                    "vigor": 2,
+                    "sabiduria": 3,
+                    "agilidad": 4,
+                    "brio": 2,
+                    "astucia": 3
+                },
+                "soporte": {
+                    "miedo": 6,
+                    "daño": 4,
+                    "inspiracion": 5
+                },
+                "habilidad": "Una vez por ronda, durante tu turno, puedes gastar 1 Inspiración para mover 1 casilla sin provocar ataques.",
+                "historia": "Si la destreza de los elfos del Bosque Negro es notoria, la de Legolas es legendaria: con el arco, con la espada o con su capacidad para percibir lo que otros no pueden y moverse sin que nada lo detenga ni dejar rastro. Sin embargo, al ser hijo del monarca del Reino del Bosque, Legolas ha pasado gran parte de su vida eclipsado por la grandeza de su padre, incluso ahora que el reino mengua cada día ante la oscuridad que lo invade desde el Sur. Si antaño las fronteras del Bosque Negro eran objeto de reverencia, hogaño transitan por ellas orcos, enanos o incluso unos seres peculiares conocidos como hobbits. El mundo está cambiando, impelido por la oscuridad que se extiende por todos sus rincones. En su hogar o allá donde vaya, Legolas está presto para poner su insuperable talento y destreza al servicio de la lucha contra el creciente mal.",
+                "inicio": {
+                    "cometido": "Cazador",
+                    "arma1": "Gran arco",
+                    "arma2": "N/A",
+                    "armadura": "Capa"
+                }
+            }
+        ]
+    }
+]

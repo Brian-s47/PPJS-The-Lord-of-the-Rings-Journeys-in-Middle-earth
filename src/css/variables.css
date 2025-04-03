@@ -1,0 +1,13 @@
+:root{
+    --color-1: #FFFFFF;
+    --color-2: #D4AF37;
+    --color-3: #222B3A;
+    --color-4: #FFF1C2;
+    --color-5: hsl(0, 0%, 20%);
+    --color-6: #FFC300;
+    --color-7: #000000;
+}
+@font-face {
+    font-family: "EagleLake-Regular";
+    src: url(../assets/font/EagleLake-Regular.ttf);
+}
