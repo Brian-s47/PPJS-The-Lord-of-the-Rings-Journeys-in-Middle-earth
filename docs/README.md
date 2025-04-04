@@ -74,7 +74,7 @@ Actualmente, la única manera de acceder a la información del contenido del jue
 Se usara la siguiente estrcutura de archivos para mantener un orden que promueva la modularidad, mantenibilidad y reutilizacion de codigo.
 
 **Estructura**
-
+```
 │── 📂 docs/               # Documentación del proyecto
 │   ├── README.md          # Instrucciones generales
 │── 📂 public/             # Archivos accesibles públicamente
@@ -94,14 +94,14 @@ Se usara la siguiente estrcutura de archivos para mantener un orden que promueva
 │   │   ├── components.css # Estilos específicos de componentes 
 │   │   ├── responsive.css # Estilos responsivos
 │   ├── 📂 data/           # Datos estáticos o de configuración  
-│   │   ├── data.json    # Configuración del proyecto
+│   │   ├── data.json      # Configuración del proyecto
 │   ├── 📂 js/             # Scripts de JavaScript  
 │   │   ├── api.js         # Llamadas a la API (fetch, manejo de datos)  
 │   │   ├── events.js      # Gestión de eventos (botones, interacciones)  
 │   │   ├── main.js        # Archivo principal, punto de entrada  
 │   │   ├── storage.js     # Funciones de almacenamiento en Local Storage  
 │   │   ├── ui.js          # Manipulación del DOM (carga de contenido)  
-
+```
 
 # Instrucciones de uso de [MockAPI](https://mockapi.io/)
 
