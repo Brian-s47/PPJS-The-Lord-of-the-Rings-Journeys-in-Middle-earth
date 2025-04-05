@@ -4,4 +4,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "EagleLake-Regular";
 }
+/*************************** Body *******************************/
+/*  */
+body {
+    background-image: url(/src/assets/img/fondo.jpg); /* Imagen de fondo */
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen de fondo */
+    background-attachment: fixed; /* Deja la imagen de fondo mientras el contenido se mueve */
+    background-repeat: no-repeat; /* Para que la imagen no se repita */
+
+    /* Trabajo de grid */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+/*************************** Header *****************************/
+/*  */
+header{
+    background-color: var(--color-3); /* Color del fondo */
+    position: sticky; /* Para fijar posicion */
+    top: 0; /* Posicion superior al borde */
+    width: 100%; /* Para que se ajuste de forma horizontal segun tamañod de pantalla */ 
+    border-radius: 0 0 20px 20px; /* Radio a los borde inferiores */
+}
+/********** Menu Superior *********/
+/*  */
+.nav_menuSup{
+    /* Trabajo de flex */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+/*  */
+.div_logo img{
+    width: 90px;
+    height: 90px;
+}
+/*  */
+.ul-menuSup{
+    /* Trabajo de flex */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vw;
+}
+/*  */
+.ul-menuSup li{
+    list-style: none;
+}
+/*  */
+.ul-menuSup li a{
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-2);
+}
+/*  */
+.ul-menuSup li a:hover {
+    font-weight: bold;
+}
+/*************************** Main *****************************/
+/*  */
+main{
+    
+}
+
+/*************************** footer *****************************/
+/*  */
+footer{
+    background-color: var(--color-3); /* Color del fondo */
+    position: sticky; /* Para fijar posicion */
+    bottom: 0; /* Posicion superior al borde */
+    width: 100%; /* Para que se ajuste de forma horizontal segun*/
+}
+/*  */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+/*  */
+.footer p, a{
+    font-size: 1rem;
+    color: var(--color-1);
+}
+
+/* 🌟 Pantallas grandes (PC y monitores grandes) */
+@media (min-width: 1200px) {
+    .ul-menuSup {
+        gap: 2vw;
+    }
+    .ul-menuSup li a {
+        font-size: 1.2rem;
+    }
+}
+/*************************** Media Queries *****************************/
