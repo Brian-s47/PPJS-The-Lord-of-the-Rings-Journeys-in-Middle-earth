@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="../src/css/main.css">
     <script type="module" defer src="../src/js/main.js"></script>
+    <script type="module" defer src="../src/js/events.js"></script>
+    <script type="module" defer src="../src/js/ui.js"></script>
 </head>
 <body>
         <!-- Menu Superior de navegacion -->
@@ -34,11 +36,11 @@
                 <!-- Menu lista de heroes lateral -->
                 <div class="div__subTitulo"> <!-- titulo de heroes e icono -->
                     <a href="#">Heroes</a>
-                    <img src="../src/assets/icon/espadas.png">
+                    <img id="iconoMenu" src="../src/assets/icon/espadas.png">
                 </div>
                 <div class="div__ListaHeroes">
                     <ul class="ul__listaHeroes"> <!-- Opciones de Menu superior -->
-                        <li><a class="heroeMenuNav" href="#">Aragorn</button></li>
+                        <li><a class="heroeMenuNav" href="#">Aragorn</a></li>
                         <li><a class="heroeMenuNav" href="#">Arwen</a></li>
                         <li><a class="heroeMenuNav" href="#">Balin</a></li>
                         <li><a class="heroeMenuNav" href="#">Beravor</a></li>
@@ -52,39 +54,7 @@
                 </div>
             </nav>
             <section class="section__infoHeroe">
-                <div class="div__inforheroe">
-                    <h1>Aragorn</h1>
-                    <div class="div__historia">
-                        <p>Los dunedain del Norte estuvieron a punto de ser extinguidos. Aunque pocos en número, no cejan en su empeño de proteger las tierras que antaño fueron su reino. Los encabeza su jefe, Aragorn, descendiente de Isildur y destinado para la grandeza. Sin embargo, esas profecías y su linaje de poco le sirven en estos tiempos. La sangre azul no puede detener el filo de un enemigo, y las canciones sobre la gloria por conquistar no sirven para alimentar a tu pueblo. Puede que el futuro les depare años de paz y prosperidad, pero el presente no. Ahora es tiempo de adversidad, penurias y supervivencia. Nuevos peligros amenazan al Norte en cada vez mayor número, y los años más oscuros aún están por llegar.</p>
-                    </div>
-                    <div class="div__tarjeta">
-                        <img id="img__heroe" src="https://i.ibb.co/jP1SwKnM/Aragorn-Heroe.png">
-                        <img id="img__historia" src="https://i.ibb.co/20cV1Hff/Aragorn-Historia.png">
-                    </div>
-                    <div class="div__caracteristicas">
-                        <h1>Caracteristicas</h1>
-                        <div class="div__estadisticas">
-                            <div class="div__carInatas">
-                                <p>Habilidad Innata: <br> Cuando los Héroes usen Otear durante la fase de reagrupamiento, tú y los Héroes cercanos reveláis cada uno 1 carta adicional.</p>
-                                <h3>Limites</h3>
-                                <ul>
-                                    <li>Miedo -> 5</li>
-                                    <li>Daño -> 5</li>
-                                </ul>
-                            </div>
-                            <div class="div__statsHeroe">
-                                <h2>Estadísticas:</h2>
-                                <ul>
-                                  <li><strong>Vigor: 5</li>
-                                  <li><strong>Sabiduría: 4</li>
-                                  <li><strong>Agilidad: 2</li>
-                                  <li><strong>Brío: 2</li>
-                                  <li><strong>Astucia: 3</li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Seccion para ingresar el HTML del heroe al que se le de click en evento de lista de navegacion lateral -->
             </section>
         </main>
         <!-- Pie de pagina -->
