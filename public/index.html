@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="../src/css/main.css">
     <script type="module" defer src="../src/js/main.js"></script>
+    <script type="module" defer src="../src/js/events.js"></script>
+    <script type="module" defer src="../src/js/ui.js"></script>
 </head>
 <body>
     <!-- Menu Superior de navegacion -->
@@ -81,5 +83,60 @@
             </a>
         </p>
     </footer>
+        <!-- Menu Superior de navegacion -->
+        <header class="header">
+            <nav class="nav_menuSup"> 
+                <div class="div_logo"> <!-- Logo superior izquierdo -->
+                    <img src="../src/assets/icon/Anillo.png">
+                </div> 
+                <ul class="ul-menuSup"> <!-- Opciones de Menu superior -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Heroes</a></li>
+                    <li><a href="#">Cometidos</a></li>
+                    <li><a href="#">Armas</a></li>
+                    <li><a href="#">Armaduras</a></li>
+                    <li><a href="#">Cartas Basicas</a></li>
+                    <li><a href="#">Mecanicas</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Cuerpo de la pagina -->
+        <main class="main">
+            <!-- Menu Lateral de navegacion -->
+            <nav class="nav__menuHeroes">
+                <!-- Menu lista de heroes lateral -->
+                <div class="div__subTitulo"> <!-- titulo de heroes e icono -->
+                    <a href="#">Heroes</a>
+                    <img id="iconoMenu" src="../src/assets/icon/espadas.png">
+                </div>
+                <div class="div__ListaHeroes">
+                    <ul class="ul__listaHeroes"> <!-- Opciones de Menu superior -->
+                        <li><a class="heroeMenuNav" href="#">Aragorn</a></li>
+                        <li><a class="heroeMenuNav" href="#">Arwen</a></li>
+                        <li><a class="heroeMenuNav" href="#">Balin</a></li>
+                        <li><a class="heroeMenuNav" href="#">Beravor</a></li>
+                        <li><a class="heroeMenuNav" href="#">Bilbo</a></li>
+                        <li><a class="heroeMenuNav" href="#">Dis</a></li>
+                        <li><a class="heroeMenuNav" href="#">Elanor</a></li>
+                        <li><a class="heroeMenuNav" href="#">Elena</a></li>
+                        <li><a class="heroeMenuNav" href="#">Gandalf</a></li>
+                        <li><a class="heroeMenuNav" href="#">Gimli</a></li>
+                        <li><a class="heroeMenuNav" href="#">Legolas</a></li>
+                </div>
+            </nav>
+            <section class="section__infoHeroe">
+                <!-- Seccion para ingresar el HTML del heroe al que se le de click en evento de lista de navegacion lateral -->
+            </section>
+        </main>
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <p>© 2024 Fantasy Flight Games. Todos los derechos reservados.</p>
+            <p>
+                <a href="https://www.fantasyflightgames.es" target="_blank" rel="noopener noreferrer">
+                    www.fantasyflightgames.es
+                </a>
+            </p>
+        </footer>
 </body>
 </html>
