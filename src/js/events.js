@@ -1,21 +1,10 @@
 // Zona de importacion de Modulos
 import{find, search} from "./api.js";
-import { cargarDatosHeroe } from "./ui.js";
 
 // Zona de selectores
-const listaMenu = document.querySelector(".ul__listaHeroes");
-const sectioninfoHeroe = document.querySelector(".section__infoHeroe");
+const sectionContenidoMain = document.querySelector(".section__contenidoMain");
 const navmenuHeroes = document.querySelector(".nav__menuHeroes");
 const iconmenuHeroeOn = document.getElementById("#iconoMenu");
-
-// Evento de escucha de click 
-
-// export const ClickHeroe = document.getElementsByClassNameall("ul__listaHeroes");
-// ClickHeroe.onclick = async function(event){
-//     event.preventDefault();
-//     const datosHeroe = await search(event.srcElement.innerText)
-//     console.log(event, datosHeroe);
-// }
 
 // Zona de Eventos de escucha
 
@@ -60,7 +49,7 @@ listaMenu.addEventListener("click", async function(event){
                     </div>
                 </div>
     `
-    sectioninfoHeroe.innerHTML = infoHeroe
+    sectionContenidoMain.innerHTML = infoHeroe
     }
 );
 
