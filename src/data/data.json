@@ -12,6 +12,10 @@
                     "brio": 2,
                     "astucia": 3
                 },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/jP1SwKnM/Aragorn-Heroe.png",
+                    "historia" :"https://i.ibb.co/20cV1Hff/Aragorn-Historia.png"
+                },
                 "soporte": {
                     "miedo": 5,
                     "daño": 5,
@@ -35,6 +39,10 @@
                     "agilidad": 3,
                     "brio": 3,
                     "astucia": 2
+                },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/Z6w0nzBV/Arwen-Heroe.png",
+                    "historia" :"https://i.ibb.co/x8FPyfxt/Arwen-Historia.png"
                 },
                 "soporte": {
                     "miedo": 6,
@@ -60,6 +68,10 @@
                     "brio": 4,
                     "astucia": 2
                 },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/PZ0ydCSr/Balin-Heroe.png",
+                    "historia" :"https://i.ibb.co/J6dLJyb/Balin-Historia.png"
+                },
                 "soporte": {
                     "miedo": 4,
                     "daño": 6,
@@ -83,6 +95,10 @@
                     "agilidad": 3,
                     "brio": 3,
                     "astucia": 2
+                },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/nqyhpgkC/Beravor-Heroe.png",
+                    "historia" :"https://i.ibb.co/d0tRNsgQ/Beravor-Historia.png"
                 },
                 "soporte": {
                     "miedo": 5,
@@ -108,6 +124,10 @@
                     "brio": 3,
                     "astucia": 4
                 },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/0pQtyCxm/Bilbo-Heroe.png",
+                    "historia" :"https://i.ibb.co/DPZS07Gg/Bilbo-Historia.png"
+                },
                 "soporte": {
                     "miedo": 7,
                     "daño": 3,
@@ -131,6 +151,10 @@
                     "agilidad": 2,
                     "brio": 3,
                     "astucia": 3
+                },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/Jgn4FRm/Dis-Heroe.png",
+                    "historia" :"https://i.ibb.co/F4d1SPLF/Dis-Historia.png"
                 },
                 "soporte": {
                     "miedo": 5,
@@ -156,6 +180,10 @@
                     "brio": 3,
                     "astucia": 3
                 },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/NdgGgGJG/Elanor-Heroe.png",
+                    "historia" :"https://i.ibb.co/zWhXN4yP/Elanor-Historia.png"
+                },
                 "soporte": {
                     "miedo": 5,
                     "daño": 5,
@@ -179,6 +207,10 @@
                     "agilidad": 2,
                     "brio": 4,
                     "astucia": 3
+                },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/rNZ3SBS/Elena-Heroe.png",
+                    "historia" :"https://i.ibb.co/jxH3jSr/Elena-Historia.png"
                 },
                 "soporte": {
                     "miedo": 6,
@@ -204,6 +236,10 @@
                     "brio": 4,
                     "astucia": 2
                 },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/nM7YdTqP/Gandalf-Heroe.png",
+                    "historia" :"https://i.ibb.co/XxsxYHR4/Gandalf-Historia.png"
+                },
                 "soporte": {
                     "miedo": 6,
                     "daño": 6,
@@ -228,6 +264,10 @@
                     "brio": 4,
                     "astucia": 2
                 },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/672ZqCTy/Gimli-Heroe.png",
+                    "historia" :"https://i.ibb.co/mVnPVqKC/Gimli-Historia.png"
+                },
                 "soporte": {
                     "miedo": 4,
                     "daño": 6,
@@ -251,6 +291,10 @@
                     "agilidad": 4,
                     "brio": 2,
                     "astucia": 3
+                },
+                "tarjetas" : {
+                    "general" :"https://i.ibb.co/hRYKRf5S/Legolas-Heroe.png",
+                    "historia" :"https://i.ibb.co/HDwVN0KV/Legolas-Historia.png"
                 },
                 "soporte": {
                     "miedo": 6,
