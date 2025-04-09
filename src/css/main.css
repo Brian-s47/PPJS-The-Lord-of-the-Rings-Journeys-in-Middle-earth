@@ -67,11 +67,54 @@ header{
 /*************************** Main *****************************/
 /*  */
 main{
-    /* background: red; */
-    /* Trabajo de Flex */
+    width: 100%;
+
+    /* Trabajo de flex */
     display: flex;
-    gap: 20px;
+    flex-direction: column;
 }
+/*************************** Descripcion de juego en Home *****************************/
+/*  */
+.section_descripcion .section_campaña{
+    /* background: blue; */
+    height: 921px;
+    width: 100%;
+
+    /* Trabajo de flex */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*  */
+.div__tituloDescripcion{
+
+}
+/*  */
+.div__tituloDescripcion h2{
+    color: var(--color-6);
+    font-size: 34px;
+}
+/*  */
+.div_parrafo{
+    background: var(--color-5);
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+.div_parrafo p{
+    color: var(--color-4);
+    font-size: 19px;
+    text-align: center;
+}
+/*  */
+.div_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*************************** Menu Lateral de Heroes en ON *****************************/
 /*  */
 .nav__menuHeroes{
     display: flex;
