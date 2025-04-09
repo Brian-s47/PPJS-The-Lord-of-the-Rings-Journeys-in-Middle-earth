@@ -66,6 +66,7 @@ export const navmenuHeroes = `
             <li><a class="heroeMenuNav" href="#">Gandalf</a></li>
             <li><a class="heroeMenuNav" href="#">Gimli</a></li>
             <li><a class="heroeMenuNav" href="#">Legolas</a></li>
+        </ul>
     </div>
 </nav>
 `
