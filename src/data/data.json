@@ -312,6 +312,8 @@
             }
         ]
     },
+   
+   
     {
       "tipo": "usuarios",
       "contenido": [
@@ -321,12 +323,24 @@
             "usuario": "brian0112",
             "contraseña": "1098719447",
             "favoritos": {
-                "heroes": ["Bilbo", "Dis"],
+                "heroes": [],
                 "cometidos": [],
                 "armas": [],
                 "armaduras": []
                 }
-            }
+        },
+        {
+            "nombre": "teg",
+            "Correo": "brian.suasdfrez0112@hotmail.com",
+            "usuario": "brisdfan0112",
+            "contraseña": "1098sfd719447",
+            "favoritos": {
+                "heroes": [],
+                "cometidos": [],
+                "armas": [],
+                "armaduras": []
+                }
+        }
         ]
     }
 ]

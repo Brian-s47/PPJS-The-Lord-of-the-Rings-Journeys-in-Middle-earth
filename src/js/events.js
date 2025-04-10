@@ -1,5 +1,5 @@
 // Zona de importacion de Modulos
-import{find, search} from "./api.js";
+import{find, save, search} from "./api.js";
 import{navmenuHeroes, descripcionHome, formularioInisioSesion, formularioCreacionUsuario} from "./ui.js";
 
 // Zona de variables
@@ -32,6 +32,10 @@ irHeroes.addEventListener("click", async function(event){
     Main.innerHTML = `${navmenuHeroes}`;
 
     // //Modificacion de CSS
+    Main.style.alignItems = ``;
+    Main.style.marginTop = ``;
+    Main.style.marginBottom = ``;
+    Main.style.gap = ""
     Main.style.flexDirection = 'row';
 
     const datos = await find();
@@ -121,6 +125,9 @@ irPerfil.addEventListener("click", async function (event){
     Main.innerHTML = ``;
 
     //Modificacion de CSS
+
+    Main.style.gap = ""
+
     Main.style.flexDirection = 'row';
     Main.style.alignItems = `center`;
     Main.style.marginTop = `20%`;
@@ -146,6 +153,12 @@ document.addEventListener("click", async function(event) {
         const datos = await search(nombreHeroe);
 
         //Modificacion de CSS
+
+        Main.style.flexDirection = `row`;
+        Main.style.alignItems = ``;
+        Main.style.marginTop = ``;
+        Main.style.marginBottom = ``;
+
         Main.style.gap = "12px"
 
         Main.innerHTML = `
@@ -201,6 +214,9 @@ document.addEventListener("click", async function(event){
         Main.innerHTML = ``;
 
         //Modificacion de CSS
+
+        Main.style.gap = ""
+
         Main.style.flexDirection = 'row';
         Main.style.alignItems = `center`;
         Main.style.marginTop = `10%`;
@@ -237,10 +253,13 @@ document.addEventListener("click", async function(event){
 document.addEventListener("click", async function (event){
     if(event.target.closest("#botonregistrar")){
         event.preventDefault();
-        // Traer el contenido del formulario      
+        // Traer el contenido del formulario   
+        const nombre = document.getElementById("nombre").value;
+        nombre.toString(); 
+        console.log(typeof(nombre));
         const nuevoUsuario = `
             {
-            "nombre": ${document.getElementById("nombre").value},
+            "nombre": ${(document.getElementById("nombre").value)},
             "Correo": ${document.getElementById("correo").value},
             "usuario": ${document.getElementById("usuario").value},
             "contraseña": ${document.getElementById("contraseña").value},
@@ -252,7 +271,23 @@ document.addEventListener("click", async function (event){
                 }
             }
         `
+
+        JSON.stringify(nuevoUsuario);
+        console.log(nuevoUsuario);
+        const datos = await find();
+        console.log(datos[1].contenido);
+
+        // Guardar datos del formulario en la API
+        await save(JSON.parse(nuevoUsuario));     
+
+        // Para borrar los datos en el local storage cuando se registre
+        campos.forEach(id => {
+            const input = document.getElementById(id);
+            input.addEventListener('input', () => {
+                localStorage.removeItem(id);
+                });
+      });
     }
-})
+});
 
 
