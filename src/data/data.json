@@ -311,5 +311,22 @@
                 }
             }
         ]
+    },
+    {
+      "tipo": "usuarios",
+      "contenido": [
+        {
+            "nombre": "Brian Fair Suarez Porras",
+            "Correo": "brian.suarez0112@hotmail.com",
+            "usuario": "brian0112",
+            "contraseña": "1098719447",
+            "favoritos": {
+                "heroes": ["Bilbo", "Dis"],
+                "cometidos": [],
+                "armas": [],
+                "armaduras": []
+                }
+            }
+        ]
     }
 ]

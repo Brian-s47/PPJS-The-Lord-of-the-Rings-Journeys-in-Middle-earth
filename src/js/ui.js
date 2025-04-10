@@ -42,7 +42,7 @@ export const descripcionHome = `
                 <img src="../src/assets/img/Juego Campaña.png">
             </div>
         </section>
-`
+`;
 
 // HTML Menu de navegacion lateral "ON"
 export const navmenuHeroes = `
@@ -69,4 +69,185 @@ export const navmenuHeroes = `
         </ul>
     </div>
 </nav>
+`;
+
+// HTML Formulario de Inicio de Sesion
+export const formularioInisioSesion = `
+    <h2>Iniciar Sesión</h2>
+    <form>
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="contrasena" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="div__resgistrar">
+      ¿No tienes cuenta? <a id="crearPerfil" href="#">Crear cuenta</a>
+    </div>
 `
+// HTML Formulario de Inicio de Sesion
+export const formularioCreacionUsuario = `
+        <h2>Creacion de Perfil</h2>
+        <form>
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="email" id="correo" placeholder="correo" required>
+          <input type="text" id="usuario" placeholder="usuario" required>
+          <input type="text" id="contraseña" placeholder="contraseña" required>
+          <button id="botonregistrar" type="submit">Registrar</button>
+        </form>
+        <div class="div__resgistrar">
+          ¿Ya tienes una cuenta? <a id="iniciarSesion" href="#">Iniciar Sesion</a>
+        </div>
+`
+
+// HTML tabla heroes
+export const tablaheroes = `
+<table class="tabla-heroes">
+    <thead class="thead-heroes">
+        <tr>
+            <th>Nombre</th>
+            <th>Raza</th>
+            <th>Vigor</th>
+            <th>Sabiduria</th>
+            <th>Agilidad</th>
+            <th>Brio</th>
+            <th>Astucia</th>
+            <th>Miedo-Max</th>
+            <th>Daño-Max</th>
+            <th>Inspiracion-Max</th>
+        </tr>
+    </thead>
+    <tbody class="tbody-heroes">
+        <tr>
+            <td>Aragorn</td>
+            <td>Humano</td>
+            <td>3</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Arwen</td>
+            <td>Elfo</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>6</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Balin</td>
+            <td>Enano</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Beravor</td>
+            <td>Humano</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>5</td>
+            <td>5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Bilbo</td>
+            <td>Hobbit</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+            <td>7</td>
+            <td>3</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Dis</td>
+            <td>Enano</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Elanor</td>
+            <td>Humano</td>
+            <td>3</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5</td>
+            <td>5</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Elena</td>
+            <td>Elfo</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>6</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Gandalf</td>
+            <td>Isari</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Gimli</td>
+            <td>Enano</td>
+            <td>4</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Legolas</td>
+            <td>Elfo</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+            <td>6</td>
+            <td>4</td>
+            <td>5</td>
+            </tr>
+    </tbody>
+</table>
+`;

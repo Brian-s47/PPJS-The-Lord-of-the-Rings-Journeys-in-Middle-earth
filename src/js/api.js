@@ -5,12 +5,12 @@ url.protocol += `https:`;
 url.hostname += `.mockapi.io`;
 url.pathname += `LOTR/componentes/`;
 
-//Modulo para carga de datos de la API
+// Modulo para carga de datos de la API
 export const find = async()=>{
     const response = await fetch(url.toString(), {method: "get"});
     return await response.json()  
 }
-//Modulo Para buscar Heroe
+// Modulo Para buscar Heroe
 export const search = async(nombre)=>{
     const data = await find();
     try {
@@ -19,4 +19,7 @@ export const search = async(nombre)=>{
         console.error("Error al buscar el héroe:", error);
         return null;
       }
+}
+// Modulo para registrar usuario
+export const save = async()=>{
 }

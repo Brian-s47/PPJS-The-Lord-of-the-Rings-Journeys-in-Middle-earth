@@ -6,6 +6,7 @@
     --color-5: hsla(0, 0%, 100%, 0.200);
     --color-6: #FFC300;
     --color-7: #000000;
+    --color-8: hsla(0, 0%, 0%, 0.5);
 }
 @font-face {
     font-family: "EagleLake-Regular";

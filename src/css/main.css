@@ -64,6 +64,7 @@ header{
 .ul-menuSup li a:hover {
     font-weight: bold;
 }
+
 /*************************** Main *****************************/
 /*  */
 main{
@@ -71,8 +72,10 @@ main{
 
     /* Trabajo de flex */
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
+
 /*************************** Descripcion de juego en Home *****************************/
 /*  */
 .section_descripcion .section_campaña{
@@ -145,6 +148,7 @@ main{
     font-size: 27px;
     text-decoration: none;
 }
+/*  */
 .div__subTitulo img{
     width: 35px;
     height: 35px;
@@ -175,10 +179,48 @@ main{
     border-radius: 12px;
     list-style: none;
 }
+/*  */
 .ul__listaHeroes li a{
     /* background: yellow; */
     text-decoration: none;
 
+}
+/*************************** Tabla de datos de heroes *****************************/
+/*  */
+.div__contenedorTabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*  */
+.tabla-heroes {
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    background: transparent;
+}
+/*  */
+.tituloTabla{
+    color: var(--color-6);
+}
+/*  */
+.thead-heroes th {
+    background-color: var(--color-8);
+    color: var(--color-6);
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px 12px 0 0;
+    font-size: 1.1em;
+}
+/*  */
+.tbody-heroes td {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1em;
 }
 /*************************** Descripcion de Heroe*****************************/
 /*  */
@@ -328,8 +370,100 @@ main{
     color: var(--color-6);
     list-style: none;
 }   
+/*************************** Inicio de sesion *****************************/
+/*  */
+.div__inicioSesion {
+    background-color: var(--color-5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+/*  */
+.div__inicioSesion h2 {
+    color: var(--color-6);
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*  */
+.div__inicioSesion input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+/*  */
+.div__inicioSesion button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-3);
+    border: none;
+    color: var(--color-1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
+.div__resgistrar {
+    text-align: center;
+    margin-top: 15px;
+}
 
+.div__resgistrar a {
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+.div__resgistrar a:hover {
+    text-decoration: underline;
+}
+/*************************** Creacion Perfil *****************************/
+/*  */
+.div__creacionUsuario {
+    background-color: var(--color-5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+/*  */
+.div__creacionUsuario h2 {
+    color: var(--color-6);
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*  */
+.div__creacionUsuario input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+/*  */
+.div__creacionUsuario button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-3);
+    border: none;
+    color: var(--color-1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/*  */
+.div__resgistrar {
+    text-align: center;
+    margin-top: 15px;
+}
+/*  */
+.div__resgistrar a {
+    color: var(--color-1);
+    text-decoration: none;
+}
+/*  */
+.div__resgistrar a:hover {
+    text-decoration: underline;
+}
 /*************************** footer *****************************/
 /*  */
 footer{
