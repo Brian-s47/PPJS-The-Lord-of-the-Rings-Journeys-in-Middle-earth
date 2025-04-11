@@ -7,7 +7,80 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet" href="../src/css/main.css">
     <script type="module" defer src="../src/js/main.js"></script>
+    <script type="module" defer src="../src/js/events.js"></script>
+    <script type="module" defer src="../src/js/ui.js"></script>
 </head>
 <body>
+    <header class="header">
+        <nav class="nav_menuSup"> 
+            <div class="div_logo"> <!-- Logo superior izquierdo -->
+                <img src="../src/assets/icon/Anillo.png">
+            </div> 
+            <ul class="ul-menuSup"> <!-- Opciones de Menu superior -->
+                <li><a id="ir__home" href="#">Home</a></li>
+                <li><a id="ir__Heroes" href="#">Heroes</a></li>
+                <li><a href="#">Cometidos</a></li>
+                <li><a href="#">Armas</a></li>
+                <li><a href="#">Armaduras</a></li>
+                <li><a href="#">Cartas Basicas</a></li>
+                <li><a href="#">Mecanicas</a></li>
+                <li><a id="ir__Perfil" href="#">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cuerpo de la pagina -->
+    <main class="main">
+        <section class="section__descripcion"> <!-- Informacion Juego -->
+            <div class="div__tituloDescripcion">
+                <h2>Descripción general</h2>
+            </div>
+            <div class="div_parrafo">
+                <p>
+                    El Señor de los Anillos: Viajes por la Tierra Media es un juego cooperativo
+                    para entre 1 y 5 jugadores. En el transcurso de cada partida, un grupo
+                    de héroes se embarcará en arriesgadas aventuras, colaborando para
+                    explorar el vasto y épico mundo de fantasía creado por J.R.R. Tolkien,
+                    El Señor de los Anillos, y sobrevivir a sus peligros. A lo largo de sus viajes,
+                    los protagonistas combatirán contra poderosos adversarios, descubrirán
+                    tesoros perdidos y saber olvidado, y personalizarán sus habilidades de
+                    forma acorde a la función que desempeñan en su comunidad. Algo
+                    siniestro está resurgiendo, uniendo todo lo que es diabólico, sombrío y
+                    corrupto, y es hora de que los héroes desafíen a este mal y comiencen
+                    sus Viajes por la Tierra Media.
+                </p>
+            </div>
+            <div class="div_image">
+                <img src="../src/assets/img/Juego Base.png">
+            </div>
+        </section>
+        <section class="section_campaña"> <!-- Informacion Campaña -->
+            <div class="div__tituloDescripcion">
+                <h2>Una campaña épica</h2>
+            </div>
+            <div class="div_parrafo">
+                <p>
+                    Cada partida de El Señor de los Anillos: Viajes por la Tierra Media es
+                    una aventura dentro de una gran campaña, durante la cual los Héroes
+                    intentan completar una serie de objetivos antes de verse superados por
+                    las fuerzas del mal que plagan la Tierra Media. Sea cual sea el resultado
+                    de una aventura en particular, los Héroes y la campaña avanzan. Finalmente,
+                    tras completar diversas aventuras, la campaña llegará a una
+                    dramática conclusión con el triunfo o el fracaso del grupo de Héroes.
+                </p>
+            </div>
+            <div class="div_image">
+                <img src="../src/assets/img/Juego Campaña.png">
+            </div>
+        </section>
+    </main>
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <p>© 2024 Fantasy Flight Games. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://www.fantasyflightgames.es" target="_blank" rel="noopener noreferrer">
+                www.fantasyflightgames.es
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
