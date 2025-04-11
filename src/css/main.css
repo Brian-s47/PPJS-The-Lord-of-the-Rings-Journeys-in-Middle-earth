@@ -18,6 +18,7 @@ body {
     /* Trabajo de grid */
     display: grid;
     grid-template-rows: auto 1fr auto;
+    gap: 10px;
 }
 /*************************** Header *****************************/
 /*  */
@@ -25,7 +26,8 @@ header{
     background-color: var(--color-3); /* Color del fondo */
     position: sticky; /* Para fijar posicion */
     top: 0; /* Posicion superior al borde */
-    width: 100%; /* Para que se ajuste de forma horizontal segun tamañod de pantalla */ 
+    height: 85px;
+    width: 100%; /* Para que se ajuste de forma horizontal segun tamaño de pantalla */ 
     border-radius: 0 0 20px 20px; /* Radio a los borde inferiores */
 }
 /********** Menu Superior *********/
@@ -100,7 +102,7 @@ main{
 }
 /*  */
 .div_parrafo{
-    background: var(--color-5);
+    background: var(--color-8);
     border-radius: 12px;
     width: 100%;
     height: auto;
@@ -232,11 +234,27 @@ main{
     grid-row-gap: 0px;
     /* background: green; */
     /* Medidas en PX */
-    width: 841px;
-    height: 987px;
+    width: 100%;
+    height: 100%;
     /* Medidas en VW */
     /* width: 77.8vw;
     height: 62.04vw; */
+}
+/*  */
+.div__tituloLike{
+    background: var(--color-8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 12px;
+    width: 215px;
+    height: 56px;
+    cursor: pointer;
+}
+/*  */
+.div__tituloLike img{
+    cursor: pointer;
 }
 /*  */
 .div__inforheroe{
@@ -252,15 +270,15 @@ main{
 .div__inforheroe h1{
     font-size: 34px;
     color: var(--color-6);
-
+    background: var(--color-8);
 }
 /*  */
 .div__historia{
-    background: var(--color-3);
+    background: var(--color-8);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
     width: 828px;
     height: 395px;
@@ -299,8 +317,10 @@ main{
 .div__caracteristicas{
     grid-area: 5 / 1 / 6 / 3;
     /* background: violet; */
+    background: var(--color-8);
     display: flex;
     flex-direction: column;
+    padding: 15px;
     /* Medidas en PX */
     width: 828px;
     height: 276px;

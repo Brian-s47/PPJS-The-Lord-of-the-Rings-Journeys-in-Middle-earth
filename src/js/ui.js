@@ -43,7 +43,6 @@ export const descripcionHome = `
             </div>
         </section>
 `;
-
 // HTML Menu de navegacion lateral "ON"
 export const navmenuHeroes = `
 <!-- Menu Lateral de navegacion -->
@@ -70,14 +69,13 @@ export const navmenuHeroes = `
     </div>
 </nav>
 `;
-
 // HTML Formulario de Inicio de Sesion
 export const formularioInisioSesion = `
     <h2>Iniciar Sesión</h2>
     <form>
       <input type="text" id="usuario" placeholder="Usuario" required>
       <input type="password" id="contrasena" placeholder="Contraseña" required>
-      <button type="submit">Entrar</button>
+      <button id="botonIniciarsesion" type="submit">Entrar</button>
     </form>
     <div class="div__resgistrar">
       ¿No tienes cuenta? <a id="crearPerfil" href="#">Crear cuenta</a>
@@ -97,7 +95,6 @@ export const formularioCreacionUsuario = `
           ¿Ya tienes una cuenta? <a id="iniciarSesion" href="#">Iniciar Sesion</a>
         </div>
 `
-
 // HTML tabla heroes
 export const tablaheroes = `
 <table class="tabla-heroes">

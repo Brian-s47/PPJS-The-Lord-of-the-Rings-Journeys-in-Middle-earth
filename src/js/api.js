@@ -28,7 +28,20 @@ export const save = async (formulario) => {
   const opciones = {
       method: "post", 
       headers: cabeceras,
-      body: formulario
+      body: JSON.stringify(formulario)
   };
   const response = await fetch(url.toString(), opciones);
 };
+// Modulo para inicio de sesion de usuario
+export const incioSesion = async (usuario, contrasena) => {
+  const data = await find();
+  for(let i = 1; i <= data.length; i++){
+    if(data[i].usuario === usuario && data[i].contraseña === contrasena){
+      return true
+    }
+  }
+};
+// Modulo traer informacion de usuario activo
+export const datosUsuarioActivo = async (usuarioActivo) =>{
+  const data = await find();
+}
